@@ -1,14 +1,29 @@
-# Ember Style Guide
-
 ## Table of contents:
 * [General](#general)
+	* [`local-modules`](#local-modules)
+	* [`jquery-ember-run`](#jquery-ember-run)
+	* [`no-observers`](#no-observers)
+	* [`no-side-effect`](#no-side-effect)
+	* [`named-functions-in-promises`](#named-functions-in-promises)
+	* [`no-function-prototype-extensions`](#no-function-prototype-extensions)
+	* [`use-ember-get-and-set`](#use-ember-get-and-set)
+	* [`use-brace-expansion`](#use-brace-expansion)
 * [Organizing](#organizing)
+	* [`order-in-components`](#order-in-components)
+	* [`order-in-models`](#order-in-models)
+	* [`order-in-routes`](#order-in-routes)
+	* [`order-in-controllers`](#order-in-controllers)
 * [Controllers](#controllers)
+	* [`alias-model-in-controller`](#alias-model-in-controller)
+	* [`query-params-on-top`](#query-params-on-top)
 * [Components](#components)
+	* [`closure-actions`](#closure-actions)
+	* [`no-on-calls-in-components`](#no-on-calls-in-components)
+	* [`avoid-leaking-state-in-components`](#avoid-leaking-state-in-components)
 * [Ember Data](#ember-data)
+	* [`no-empty-attrs`](#no-empty-attrs)
 * [Routing](#routing)
-* [Templates](#templates)
-* [Tests](#tests)
+	* [`routes-segments-snake-case`](#routes-segments-snake-case)
 
 ## General
 
