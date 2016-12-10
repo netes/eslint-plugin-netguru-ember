@@ -29,7 +29,7 @@
 
 ### Create local version of Ember.* and DS.*
 #### `local-modules`
-Ember can use new functionality of ES6 - `modules`. In near future, Ember will be build using this convention and eventually we will import `computed` instead of `Ember.computed`. To make code more clear and ready for future, we can create local versions of these modules.
+Ember can use new functionality of ES6 - `modules`. In the near future, Ember will use this convention and eventually we will have to import `computed` instead of `Ember.computed`. To make code more clear and ready for the future, we should create local versions of these modules.
 ```javascript
 import Ember from 'ember';
 import DS from 'ember-data';
@@ -63,7 +63,7 @@ export default DS.Model.extend({
 
 ### Don’t use jQuery without Ember Run Loop
 #### `jquery-ember-run`
-Using plain jQuery provides invoke actions out of the Ember Run Loop. To have control on all operations in Ember it's good practice to trigger actions in run loop.
+Using plain jQuery invokes actions out of the Ember Run Loop. In order to have a control on all operations in Ember it's good practice to trigger actions in run loop.
 ```javascript
 /// GOOD
 Ember.$('#something-rendered-by-jquery-plugin').on(
@@ -80,7 +80,7 @@ Ember.$('#something-rendered-by-jquery-plugin').on('click', () => {
 
 ### Don't use observers
 #### `no-observers`
-Usage of observers is very easy **BUT** it leads to hard to reason about consequences. If observers are not necessary then better to avoid them.
+Usage of observers is very easy **BUT** it leads to hard to reason about consequences. Unless observers are necessary, it's better to avoid them.
 ```hbs
 {{input value=text key-up="change"}}
 ```
@@ -252,7 +252,7 @@ fullName: computed('user.firstName', 'user.lastName', {
 
 ### Organize your components
 #### `order-in-components`
-To maintain good readable of code, you should write code grouped and ordered in this way:
+You should write code grouped and ordered in this way:
 
 1. Services
 2. Default values
@@ -313,7 +313,7 @@ export default Component.extend({
 
 ### Organize your models
 #### `order-in-models`
-Build model groups for each type of element. You should create 3 main subgroups in this order:
+You should write code grouped and ordered in this way:
 
 1. Attributes
 2. Relations
@@ -574,7 +574,7 @@ export default Component.extend({
 ```
 ### Don't use `.on()` calls as components values
 #### `no-on-calls-in-components`
-Prevents using `.on()` in favour to component lifecycle hooks methods
+Prevents using `.on()` in favour of component's lifecycle hooks.
 ```js
 export default Component.extend({
   // BAD
@@ -626,8 +626,7 @@ export default Ember.Component.extend({
 
 ### Route naming
 #### `routes-segments-snake-case`
-Dynamic segments in routes should use _snake case_. Reason:
-- Ember could resolve promises without extra serialization work
+Dynamic segments in routes should use _snake case_, so Ember doesn't have to do extra serialization in order to resolve promises.
 
 ```javascript
 // GOOD
