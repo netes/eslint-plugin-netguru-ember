@@ -1,5 +1,7 @@
 # eslint-plugin-netguru-ember
 
+[![NPM version](https://img.shields.io/npm/v/eslint-plugin-netguru-ember.svg?style=flat)](https://npmjs.org/package/eslint-plugin-netguru-ember)
+[![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-netguru-ember.svg?style=flat)](https://npmjs.org/package/eslint-plugin-netguru-ember)
 [![Circle CI](https://circleci.com/gh/netguru/eslint-plugin-netguru-ember.svg?style=svg&circle-token=58c1b942a91ecd67eed15502a5df51b3d1504f35)](https://circleci.com/gh/netguru/eslint-plugin-netguru-ember)
 
 > ESlint plugin that provides set of rules for Ember Applications based on Netguru's Ember Styleguide.
@@ -102,6 +104,30 @@ All rules from our plugin have to be prefixed with `netguru-ember/`
   * **routes-segments-snake-case** - Route's dynamic segments should use snake case [(more)](https://github.com/netguru/ember-styleguide#route-naming)
 
 \* Rule with optional settings
+
+### All Rules in JSON
+
+```
+    "netguru-ember/alias-model-in-controller": 0,
+    "netguru-ember/avoid-leaking-state-in-components": 0,
+    "netguru-ember/closure-actions": 0,
+    "netguru-ember/jquery-ember-run": 0,
+    "netguru-ember/local-modules": 0,
+    "netguru-ember/named-functions-in-promises": 0,
+    "netguru-ember/no-empty-attrs": 0,
+    "netguru-ember/no-function-prototype-extensions": 0,
+    "netguru-ember/no-observers": 0,
+    "netguru-ember/no-on-calls-in-components": 0,
+    "netguru-ember/no-side-effects": 0,
+    "netguru-ember/order-in-components": 0,
+    "netguru-ember/order-in-controllers": 0,
+    "netguru-ember/order-in-models": 0,
+    "netguru-ember/order-in-routes": 0,
+    "netguru-ember/query-params-on-top": 0,
+    "netguru-ember/routes-segments-snake-case": 0,
+    "netguru-ember/use-brace-expansion": 0,
+    "netguru-ember/use-ember-get-and-set": 0,
+```
 
 ## Contribution guide
 
